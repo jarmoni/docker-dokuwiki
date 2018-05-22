@@ -7,7 +7,7 @@
 ## Goals
 - Personal use only (kind of 'desktop-app-replacement')
 - Lightweight Docker-based Dokuwiki-container which runs on all machines (Desktop, Notebook, 2nd Notebook,....)
-- Content is kept in sync via Git (<https://www.dokuwiki.org/plugin:gitbacked>)
+- Content is kept in GIT by use of [gitbacked](https://www.dokuwiki.org/plugin:gitbacked)
 - Short-term live-cycle:
   - No content on file-system of local machine
   - No migration - just rebuild container
