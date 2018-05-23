@@ -29,8 +29,8 @@
 docker run -d --name dokuwiki -p 1113:80 -e SSH_KEY="$(cat ~/.ssh/id_rsa_dokuwiki)" -e DOKUWIKI_USERDATA_REPOS="git@bitbucket.org:johndoe/my_repos.git" jarmoni/docker-dokuwiki:latest
 ```
 
-## Resources
-I'm not the PHP-guy, so I needed some inspiration....
+## Links
+These resources were very helpful when setting this up:
 - <https://www.nginx.com/resources/wiki/start/topics/recipes/dokuwiki/>
 - <https://github.com/nginxinc/docker-nginx>
 - <https://github.com/istepanov/docker-dokuwiki>
