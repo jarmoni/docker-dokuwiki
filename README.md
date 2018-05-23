@@ -21,7 +21,15 @@
 - PHP
 - Supervisor
 - Dokuwiki
-### Resources
+
+## Run container
+```bash
+#docker run -d --name dokuwiki -p <LOCAL_PORT>:80 -e SSH_KEY="$(cat <SSH_KEY>)" -e DOKUWIKI_USERDATA_REPOS=<GIT_REPOS> jarmini/docker-dokuwiki:latest
+# e.g.
+docker run -d --name dokuwiki -p 1113:80 -e SSH_KEY="$(cat ~/.ssh/id_rsa_dokuwiki)" -e DOKUWIKI_USERDATA_REPOS="git@bitbucket.org:johndoe/my_repos.git" jarmoni/docker-dokuwiki:latest
+```
+
+## Resources
 I'm not the PHP-guy, so I needed some inspiration....
 - <https://www.nginx.com/resources/wiki/start/topics/recipes/dokuwiki/>
 - <https://github.com/nginxinc/docker-nginx>
