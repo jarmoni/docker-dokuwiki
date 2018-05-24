@@ -26,7 +26,7 @@
 ```bash
 #docker run -d --name dokuwiki -p <LOCAL_PORT>:80 -e SSH_KEY="$(cat <SSH_KEY>)" -e DOKUWIKI_USERDATA_REPOS=<GIT_REPOS> jarmini/docker-dokuwiki:latest
 # e.g.
-docker run -d --name dokuwiki -p 1113:80 -e SSH_KEY="$(cat ~/.ssh/id_rsa_dokuwiki)" -e DOKUWIKI_USERDATA_REPOS="git@bitbucket.org:johndoe/my_repos.git" jarmoni/docker-dokuwiki:latest
+docker run -d --name dokuwiki -p 1113:80 --restart always -e SSH_KEY="$(cat ~/.ssh/id_rsa_dokuwiki)" -e DOKUWIKI_USERDATA_REPOS="git@bitbucket.org:johndoe/my_repos.git" jarmoni/docker-dokuwiki:latest
 ```
 
 ## Links
@@ -35,3 +35,4 @@ These resources were very helpful when setting this up:
 - <https://github.com/nginxinc/docker-nginx>
 - <https://github.com/istepanov/docker-dokuwiki>
 - <https://github.com/crazy-max/docker-dokuwiki>
+
